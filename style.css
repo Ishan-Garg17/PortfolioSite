@@ -135,7 +135,7 @@ div>img{
 }
 /* FOR MOBILE PHONES */
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 550px){
     i{
         font-size: 2em;
     }
