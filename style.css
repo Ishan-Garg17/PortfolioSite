@@ -107,7 +107,7 @@ div>img{
         flex-direction: row;
         justify-content: space-around;
         margin-top: 13px;
-        width: 25%;
+        width: 50%;
     }
     div>img{
        height: 50%;
@@ -132,23 +132,16 @@ div>img{
 /* FOR MOBILE PHONES */
 
 @media screen and (max-width: 425px){
-    .socialmedia{
-        width: 50%;
-    }
     i{
         font-size: 2em;
     }
-   nav{
-       
-   }
    #sideicon{
    display: block;
-}
+   }
    .push{
        display: none;
    }
-
-    .home-content{
+  .home-content{
         font-size: var(--font-size-smaller);
     }
     h1{
