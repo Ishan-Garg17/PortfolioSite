@@ -33,6 +33,6 @@
 #sideicon{
     margin-left: auto;
 }
-#sideicon:hover .sidemenu{
+#sideicon:active .sidemenu{
     display: block;
 }
