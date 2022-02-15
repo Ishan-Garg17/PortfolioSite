@@ -1,0 +1,158 @@
+:root{
+    --nav-size: 1.2em;
+    --logo-size: 1.8em;
+    --font-size-larger: 2em;
+    --fade-text: 0.7em;
+    --font-size-smaller: 1.6em;
+}
+
+*{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    flex-wrap: wrap;
+}
+#sideicon{
+    display: none;
+}
+nav{
+    background-color: aliceblue;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    padding: 20px;
+    font-size: var(--nav-size);
+}
+#logo{
+    margin-top: auto;
+    color: black;
+    font-size: var(--logo-size);
+}
+.push{
+    display: flex;
+    margin-left: auto;   
+    margin-top: 5px;
+    flex-wrap: nowrap;
+}
+
+/* HOME section */
+
+section{
+    height: 100vh;
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.main-content{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.home-content{
+    font-size: var(--font-size-larger);
+    width: 45%;
+}
+h1{
+    font-size: var(--font-size-larger);
+}
+.fade-text{
+    font-size: var(--fade-text);
+    color: rgb(53, 52, 52);
+}
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+i{
+    font-size: 3em;
+}
+.profile-image{
+  width: 40%;
+}
+div>img{
+
+    height: 50%;
+    width: 100%;
+
+}
+
+/* FOR SMALL LAPTOP */
+
+@media screen and (max-width: 1024px) {
+    .main-content{
+        flex-direction: column-reverse;
+    } 
+    .home-content{
+      width: 80%;
+    }
+    .profile-image{
+        width: 100%;
+      }
+    #home{
+        height: 100%;
+    }
+    .socialmedia{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 13px;
+        width: 25%;
+    }
+    div>img{
+       height: 50%;
+       width: 100%;
+    }
+}
+
+
+/* FOR MOBILE LARGE AND TABLETS */
+
+@media screen and (max-width: 623px) {
+    li{
+        font-size: var(--font-size-smaller);
+    }
+    .profile-image{
+        width: 100%;
+      }
+    i{
+        font-size: 2em;
+    }
+}
+/* FOR MOBILE PHONES */
+
+@media screen and (max-width: 425px){
+    .socialmedia{
+        width: 50%;
+    }
+    i{
+        font-size: 2em;
+    }
+   nav{
+       
+   }
+   #sideicon{
+   display: block;
+}
+   .push{
+       display: none;
+   }
+
+    .home-content{
+        font-size: var(--font-size-smaller);
+    }
+    h1{
+        font-size: 1.5em;
+    }
+
+}
