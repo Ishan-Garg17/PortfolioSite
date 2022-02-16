@@ -55,16 +55,20 @@ section{
     
 }
 .main-content{
-    width: 90%;
-    height: 100%;
+    flex: 1.8;
+    /* width: 90%;
+    height: 100%; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* outline: 2px solid rebeccapurple; */
 }
 .home-content{
+    margin: 30px;
+    /* margin-left: 10px; */
     font-size: var(--font-size-larger);
-    width: 45%;
+    flex: 0.5;
 }
 h1{
     font-size: var(--font-size-larger);
@@ -74,6 +78,7 @@ h1{
     color: rgb(53, 52, 52);
 }
 .socialmedia{
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,7 +89,7 @@ i{
     font-size: 3em;
 }
 .profile-image{
-  width: 40%;
+ flex: 0.4;
 }
 div>img{
 
@@ -99,13 +104,8 @@ div>img{
     .main-content{
         flex-direction: column-reverse;
     } 
-    .home-content{
-      width: 80%;
-    }
-    .profile-image{
-        width: 100%;
-      }
     #home{
+        width: 100%;
         height: 100%;
     }
     .socialmedia{
@@ -113,10 +113,6 @@ div>img{
         justify-content: space-around;
         margin-top: 13px;
         width: 50%;
-    }
-    div>img{
-       height: 50%;
-       width: 100%;
     }
 }
 
@@ -127,9 +123,6 @@ div>img{
     li{
         font-size: var(--font-size-smaller);
     }
-    .profile-image{
-        width: 100%;
-      }
     i{
         font-size: 2em;
     }
@@ -146,9 +139,6 @@ div>img{
    .push{
        display: none;
    }
-  .home-content{
-        font-size: var(--font-size-smaller);
-    }
     h1{
         font-size: 1.5em;
     }
