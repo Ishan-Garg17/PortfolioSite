@@ -3,7 +3,7 @@
     --logo-size: 1.8em;
     --font-size-larger: 2em;
     --fade-text: 0.7em;
-    --font-size-smaller: 1.6em;
+    --font-size-smaller: 1.3em;
 }
 
 *{
@@ -54,21 +54,18 @@ section{
     margin-top: 5em;
     
 }
-.main-content{
-    flex: 1.8;
-    /* width: 90%;
-    height: 100%; */
+.main-section{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* outline: 2px solid rebeccapurple; */
+    height: 100%;
 }
-.home-content{
-    margin: 30px;
-    /* margin-left: 10px; */
+.main-content{
+    /* margin: 30px; */
     font-size: var(--font-size-larger);
-    flex: 0.5;
+    width: 40%;
+    
 }
 h1{
     font-size: var(--font-size-larger);
@@ -89,7 +86,7 @@ i{
     font-size: 3em;
 }
 .profile-image{
- flex: 0.4;
+ width: 45%;
 }
 div>img{
 
@@ -98,12 +95,73 @@ div>img{
 
 }
 
+
+/* STYLE BUTTON */
+.btn{
+    display: block;
+    background-color: azure;
+    color: black;
+    height: 5em;
+    width: 13em;
+    margin-top: 20px;
+    padding: 5px;
+}
+.btn-text{
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+.btn-icon{
+    font-size: 2em;
+}
+
+
+/* ABOUT SECTION */
+#about{
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.additions-about{
+    height: 75%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about-image{
+    width: 25%;
+}
+.about-image img{
+    width: 100%;
+    /* height: 25%; */
+}
+.content{
+        width: 40%;
+}
+.content p{
+    text-align: justify;
+}
+.center{
+    text-align: center;
+}
+
+/* Changing Flex direction to column  */
+ /* @media screen and (max-width: 1317px) {
+    .main-section{
+        flex-direction: column-reverse;
+    }    
+} */
+
 /* FOR SMALL LAPTOP */
 
 @media screen and (max-width: 1024px) {
-    .main-content{
+    .main-section{
         flex-direction: column-reverse;
+        height: 100%;
     } 
+    .main-content{
+        width: 60%;
+    }
     #home{
         width: 100%;
         height: 100%;
@@ -113,6 +171,17 @@ div>img{
         justify-content: space-around;
         margin-top: 13px;
         width: 50%;
+    }
+
+    .about-image{
+        width: 45%;
+        /* height: 100%; */
+    }
+    .about-image img{
+        height: 100%;
+    }
+    .content{
+        width: 80%;
     }
 }
 
@@ -130,6 +199,18 @@ div>img{
 /* FOR MOBILE PHONES */
 
 @media screen and (max-width: 550px){
+    .profile-image{
+        width: 100%;
+    }
+    .main-section{
+        height: 100%;
+    }
+    .main-content{
+        width: 80%;
+    }
+    .content{
+        width: 80%;
+    }
     i{
         font-size: 2em;
     }
@@ -143,4 +224,10 @@ div>img{
         font-size: 1.5em;
     }
 
+}
+
+@media screen and (max-width: 329px) {
+    .main-section{
+        height: 100%;
+    }
 }
