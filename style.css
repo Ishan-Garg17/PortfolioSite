@@ -44,7 +44,7 @@ li{
 /* HOME section */
 
 section{
-    height: 100vh;
+    height: 131vh;
 }
 #home{
     display: flex;
@@ -129,23 +129,27 @@ div>img{
     align-items: center; */
 }
 .additions-about{
-    margin: 10px auto;
+    margin: 30px auto;
     justify-content: space-evenly;
     flex-wrap: wrap-reverse;
 }
 
 .about-image{
     background-color: wheat;
-    flex-basis: 42rem;
+    flex-basis: 30rem;
 }
-.about-image img{
-  
+.incbutton{
+    width: 19em;
+    height: 5em;
 }
 .content{
+    padding: 12px;
     background-color: rgb(247, 211, 211);
-    flex-basis: 42rem;
+    flex-basis: 43rem;
+    flex-grow: 0.5;
 }
 .content p{
+    font-size: 1.2em;
     text-align: justify;
 }
 .center{
