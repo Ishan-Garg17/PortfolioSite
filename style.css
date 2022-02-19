@@ -59,17 +59,16 @@ html{
 body{
     width: 100vw;
     height: 100vh;
-    /* min-width: 100vw; */
+  
 }
 section{
-    /* width: 118vw; */
+    
     margin-top: 25em;
 }
 #home{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* flex-direction: column; */
     margin-top: 5em;
     
 }
@@ -78,7 +77,6 @@ section{
     justify-content: space-evenly;
     align-items: center;
     width: 81vw;
-    /* background-color: rgb(125, 131, 131); */
 }
 .main-content{
     font-size: var(--font-size-larger);
@@ -89,7 +87,6 @@ section{
 }
 .profile-image{
     flex-basis: 42rem;
-    /* background-color: aqua; */
 }
 h1{
     font-size: var(--font-size-larger);
@@ -161,16 +158,14 @@ html{
     color: #072685;
     font-size: 1em;
 }
-#scroll i:hover{
-    /* color: black; */
-}
+
 .inc-size{
     font-size: 1.5em !important;
 }
 #scroll span{
     cursor: pointer;
     font-size: 25px;
-    /* margin-bottom: 10px; */
+   
 }
 span a{
     text-decoration: none;
@@ -341,14 +336,7 @@ footer h3{
 
 /* FOR MOBILE LARGE AND TABLETS */
 
-@media screen and (max-width: 623px) {
-    /* li{
-        font-size: var(--font-size-smaller);
-    }
-    i{
-        font-size: 2em;
-    } */
-}
+
 /* FOR MOBILE PHONES */
 
 @media screen and (max-width: 520px){
@@ -380,10 +368,8 @@ footer h3{
     }
 
 
-
-
 }
 
 @media screen and (max-width: 329px) {
-  
+ 
 }
