@@ -3,11 +3,11 @@
     justify-content: center;
     align-items:center ;
     background-color: rgb(74, 111, 214);
+    margin-right: 20px;
     position: absolute;
     font-size: 0.5em;
     right: 0;
-    margin-right: 20px;
-    border-radius: 13px;
+     border-radius: 13px;    
     width: 18em;
 }
 .sidemenu ul{
