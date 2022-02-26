@@ -81,12 +81,12 @@ section{
 .main-content{
     font-size: var(--font-size-larger);
     flex-basis: 44rem;
-    margin-top: 5em;
+    margin-top: 7em;
     flex-grow: 1;  
     
 }
 .profile-image{
-    flex-basis: 42rem;
+    flex-basis: 40rem;
 }
 h1{
     font-size: var(--font-size-larger);
@@ -186,7 +186,7 @@ span a{
 }
 
 .about-image{
-    background-color: wheat;
+    /* background-color: wheat; */
     flex-basis: 30rem;
 }
 .incbutton{
@@ -195,9 +195,10 @@ span a{
 }
 .content{
     padding: 12px;
-    background-color: rgb(247, 211, 211);
+    /* background-color: rgb(247, 211, 211); */
     flex-basis: 43rem;
     flex-grow: 0.5;
+    margin-bottom: 1.5em;
 }
 .content p{
     font-size: 1.2em;
@@ -264,15 +265,24 @@ span a{
     padding: 10px;
 }
 .skill-list{
-    background-color: rgb(182, 248, 248);
+    background-color: aliceblue;
     border-radius: 12px;
-    flex-basis: 41em;
+    flex-basis: 30em;
+    height: 5em;
     margin: 5px;
     display: flex;
     justify-content: space-evenly;
 }
-
-
+.skill-heading h1,h3{
+    font-size: 15px;
+}
+.skill-heading h3{
+    margin-top: 6px;
+}
+.skill-icon{
+    display: block;
+    /* margin-top: 6px; */
+}
 /* footer */
 footer{
     margin-top: 25em;
@@ -338,8 +348,21 @@ footer h3{
 
 
 /* FOR MOBILE PHONES */
+@media screen and (max-width: 431px) {
+    .socialmedia{
+        flex-direction: row;
+        width: 20em;
+        margin-right: 0;
+    }
+}
 
-@media screen and (max-width: 520px){
+@media screen and (max-width: 375px) {
+   section{
+       width: 24em;
+   }
+}
+
+@media screen and (max-width: 580px){
     
     i{
         font-size: 2em;

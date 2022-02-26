@@ -16,9 +16,14 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    color: white;
 }
 
+li:hover a {
+    color: #c9d4f8 !important;
+}
+.visible{
+    display: block !important;
+}
 .sidemenu ul li{
     margin: 0 auto;
     width: 5em;
@@ -33,6 +38,6 @@
 #sideicon{
     margin-left: auto;
 }
-#menulink:active .sidemenu{
+/* #menulink:hover.sidemenu{
     display: block;
-}
+} */
