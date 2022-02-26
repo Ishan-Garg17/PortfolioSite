@@ -5,13 +5,14 @@
     --fade-text: 0.7em;
     --font-size-smaller: 1.3em;
 }
-
 *{
     margin: 0;
     font-family: "Poppins", sans-serif;
     flex-wrap: wrap;
     text-decoration: none;
 }
+
+
 #sideicon{
     display: none;
     color: aliceblue;
@@ -26,9 +27,11 @@ nav{
 ul{
     display: flex;
 }
+
 li a{
     color: black !important;
 }
+
 li{
     
     text-decoration: none;
@@ -50,6 +53,7 @@ li:hover a{
     margin-top: 5px;
     flex-wrap: nowrap;
 }
+
 
 /* HOME section */
 html{
@@ -123,7 +127,7 @@ div>img{
     width: 14em;
     border: 0;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 40px;
     padding: 5px;
 }
 .btn:hover{
@@ -174,9 +178,11 @@ span a{
 #scroll span a:hover{
     color: #0d0086;
 }
+
+
 /* ABOUT SECTION */
 #about{
-    margin-top: 10em;
+    margin-top: 20em;
   
 }
 .additions-about{
@@ -186,7 +192,6 @@ span a{
 }
 
 .about-image{
-    /* background-color: wheat; */
     flex-basis: 30rem;
 }
 .incbutton{
@@ -195,7 +200,6 @@ span a{
 }
 .content{
     padding: 12px;
-    /* background-color: rgb(247, 211, 211); */
     flex-basis: 43rem;
     flex-grow: 0.5;
     margin-bottom: 1.5em;
@@ -216,7 +220,7 @@ span a{
 /* PROJECT SECTION */
 .project-section{
     width: 92%;
-    margin: 15px auto;
+    margin: 75px auto;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
     gap: 15px;
@@ -230,7 +234,6 @@ span a{
     padding: 15px;
 }
 .project-img{
-    /* flex-basis: 12.5em; */
     margin-bottom: 3.2px;
 }
 .project-content{
@@ -244,7 +247,7 @@ span a{
 
 .project-btn{
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     height: 3em;
     width: 18em;
     font-size: 1em;
@@ -270,8 +273,9 @@ span a{
     flex-basis: 30em;
     height: 5em;
     margin: 5px;
+    margin-top: 50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .skill-heading h1,h3{
     font-size: 15px;
@@ -281,11 +285,20 @@ span a{
 }
 .skill-icon{
     display: block;
+    margin-right: 2em;
 }
+
+.Mr{
+    margin-right: 0.5em;
+}
+.Mr2{
+    margin-right: 0.2em;
+}
+
+
 /* footer */
 footer{
     margin-top: 25em;
-    /* height: 30vh; */
     background-color: rgb(115, 115, 238);
 }
 .addition-footer{
@@ -297,17 +310,25 @@ footer{
     text-decoration: none;
     color: white;
 }
-li a{
+.footer-titles li a{
     text-decoration: none;
-    color: white;
+    color: white !important;
+}
+.footer-titles li a:hover{
+    color: rgb(7, 8, 8) !important;
 }
 #ishan:hover{
     color: #000000 !important;
 }
 #socialmedia-footer i
 {
-    margin-right: 4px;
+    color: white;
+    margin-right: 12px;
     font-size: 2em;
+}
+#socialmedia-footer i:hover
+{
+    color: rgb(7, 8, 8);
 }
 footer h3{
     text-align: center;
@@ -321,21 +342,13 @@ footer h3{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1698px) {
     .main-section{
         flex-wrap: wrap-reverse;
+        width: 94%;
+    }
+    .addition-skills{
+        flex-wrap: wrap !important;
     }
     .main-content{
         margin-top: 0;
@@ -343,11 +356,9 @@ footer h3{
 }
 
 
-/* FOR MOBILE LARGE AND TABLETS */
-
 
 /* FOR MOBILE PHONES */
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 1633px) {
     .socialmedia{
         flex-direction: row;
         width: 20em;
@@ -359,12 +370,15 @@ footer h3{
    section{
        width: 24em;
    }
+   footer{
+       width: 25em;
+   }
 }
 
 @media screen and (max-width: 580px){
     
     i{
-        font-size: 2em;
+        font-size: 2.4em;
     }
    #sideicon{
    display: block;
@@ -379,19 +393,18 @@ footer h3{
     .addition-footer{
         flex-direction: column;
     }
+    #footer-logo{
+        margin-right: 30px !important;
+        margin-top: 10px;
+    }
     .footer-titles{
         flex-direction: column;
         margin-top: 35px;
         margin-bottom: 35px;
+        margin-right: 35px;
         align-items: stretch;
     }
     #socialmedia-footer i{
         margin-right: 12px;
     }
-
-
-}
-
-@media screen and (max-width: 329px) {
- 
 }
