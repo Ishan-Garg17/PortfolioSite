@@ -226,7 +226,7 @@ span a{
     gap: 15px;
 }
 .projectholder{
-    background-color: rgb(142, 182, 255);
+    background-color: #abbfff;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -236,7 +236,12 @@ span a{
 .project-img{
     margin-bottom: 3.2px;
 }
+.project-img img{
+    height: 250px;
+    /* width: 400px; */
+}
 .project-content{
+    margin-top: 15px;
     flex-basis: 14em;
 }
 .project-content p{
@@ -247,12 +252,20 @@ span a{
 
 .project-btn{
     display: block;
-    margin: 20px auto;
+    margin: 35px auto;
     height: 3em;
     width: 18em;
     font-size: 1em;
-    background-color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 13px;
+    cursor: pointer;
+    background-color: #4170f8;
 }
+
+.project-btn:hover{
+    background-color: #2850ca;
+}
+
 .project-btn-text{
     color: white;
 }
