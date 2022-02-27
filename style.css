@@ -241,13 +241,12 @@ span a{
     align-items: center;
     padding: 15px;
 }
-/* .projectholder:hover{
-    background-color: #072685;
-} */
+
 .project-img{
-    margin-bottom: 3.2px;
-    
-    transition: all 1.4s ease-out;
+    margin-bottom: 15px;
+    height: 250px;
+    transition: all 1s ease-out;
+    box-shadow: 6px 5px 8px #9b9b9b;
 }
 .project-img:hover{
     transform: scale(1.1);
@@ -276,6 +275,7 @@ span a{
     border-radius: 13px;
     cursor: pointer;
     background-color: #4170f8;
+    box-shadow: 6px 5px 4px #9b9b9b;
 }
 
 .project-btn:hover{
@@ -305,9 +305,10 @@ span a{
     margin-top: 50px;
     display: flex;
     justify-content: center;
-    transition: all 1s ease-out;
+    transition: all 1s ease-in-out;
 }
 .skill-list:hover{
+    /* background-color: #1f45b9 ; */
     transform: scale(1.2);
 }
 .skill-heading h1,h3{
