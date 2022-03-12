@@ -310,7 +310,6 @@ span a{
     transition: all 1s ease-in-out;
 }
 .skill-list:hover{
-    /* background-color: #1f45b9 ; */
     transform: scale(1.2);
 }
 .skill-heading h1,h3{
